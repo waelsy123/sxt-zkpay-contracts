@@ -30,6 +30,7 @@ contract Deploy is Script {
         // Remaining slots: addresses (each takes a full slot)
         address zkpayOwner;
         address zkpayTreasury;
+        address sxtTokenAddress;
         address nativeTokenPriceFeed;
         address posqlPayoutAddress;
         address usdcTokenAddress;
@@ -53,6 +54,7 @@ contract Deploy is Script {
         config.nativeTokenStalePriceThresholdInSeconds =
             uint64(configJson.readUint(".nativeTokenStalePriceThresholdInSeconds"));
         config.posqlPayoutAddress = configJson.readAddress(".posqlPayoutAddress");
+        config.sxtTokenAddress = configJson.readAddress(".SXT");
 
         // usdc payment asset section
         config.usdcTokenAddress = configJson.readAddress(".usdcTokenAddress");
@@ -75,6 +77,7 @@ contract Deploy is Script {
                 (
                     msg.sender,
                     config.zkpayTreasury,
+                    config.sxtTokenAddress,
                     config.nativeTokenPriceFeed,
                     config.nativeTokenDecimals,
                     config.nativeTokenStalePriceThresholdInSeconds

@@ -11,4 +11,6 @@ contract ZKPayStorage {
     mapping(bytes32 queryHash => uint64 querySubmissionTimestamp) internal _querySubmissionTimestamps;
     uint248[1] internal _queryNonce;
     mapping(bytes32 queryHash => QueryLogic.QueryPayment queryPayment) internal _queryPayments;
+
+    address internal _sxt;
 }
