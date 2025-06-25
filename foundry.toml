@@ -10,6 +10,7 @@ extra_output = ["storageLayout"]
 fs_permissions = [{ access = "read-write", path = "./" }]
 optimizer = true
 optimizer_runs = 2000
+via_ir = true
 # Only show coverage for files that do not match the specified regex pattern.
 no_match_coverage = "test/mocks/**|script/**"
 
@@ -18,6 +19,7 @@ remappings = [
     "@openzeppelin/contracts-upgradeable/=dependencies/@openzeppelin-contracts-upgradeable-5.2.0/",
     "@chainlink/contracts/=dependencies/@chainlink-contracts-0.8.0/",
     "@uniswap/v3-periphery/=dependencies/@uniswap-v3-periphery-1.4.4/",
+    "@uniswap/v3-core/=dependencies/@uniswap-v3-periphery-1.4.4/node_modules/@uniswap/v3-core/",
 ]
 
 [dependencies]
