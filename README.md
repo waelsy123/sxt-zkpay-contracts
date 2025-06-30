@@ -1,5 +1,19 @@
 # Space and Time | ZKPay Smart Contracts
 
+
+## **Install Solidity dependencies**
+   ```bash
+   ./jobs/install_dependencies.sh
+   
+   ```
+
+### Build the project
+forge build
+
+### Run tests
+forge test
+```
+
 ## Git Hooks
 
 This repository includes a sample pre-commit hook located in `githooks/pre-commit`.

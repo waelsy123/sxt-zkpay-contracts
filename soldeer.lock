@@ -32,3 +32,9 @@ version = "0.4.0"
 url = "https://soldeer-revisions.s3.amazonaws.com/openzeppelin-foundry-upgrades/0_4_0_27-01-2025_18:32:41_openzeppelin-foundry-upgrades.zip"
 checksum = "d38121a53a68c9a3e10032d37c712b28604a673c77b7186332f65c423e53cc45"
 integrity = "7453d9ee76f1bbf72424354de766dd2a4af61ec33968b4e0da111e6d734943e2"
+
+[[dependencies]]
+name = "uniswap-v3-periphery"
+version = "1.3.0"
+git = "https://github.com/Uniswap/v3-periphery.git"
+rev = "0682387198a24c7cd63566a2c58398533860a5d1"

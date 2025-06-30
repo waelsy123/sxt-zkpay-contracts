@@ -5,7 +5,7 @@ import {IZKPayClient} from "../../src/interfaces/IZKPayClient.sol";
 
 contract ClientContractExpensiveCallback is IZKPayClient {
     // this gas requires ~12m gas
-    function zkPayCallback(bytes32, bytes calldata, bytes calldata) external {
+    function zkPayCallback(bytes32, bytes calldata, bytes calldata) external pure {
         for (uint256 i = 0; i < 32_777; ++i) {
             keccak256(abi.encode(i));
         }
